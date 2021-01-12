@@ -1,0 +1,17 @@
+//import all scss files
+//import files in "base" folder
+@import "base/variables";
+@import "base/grid";
+@import "base/base";
+//import files in "layout" folder
+@import "layout/header";
+@import "layout/menu";
+@import "layout/main";
+@import "layout/cards";
+@import "layout/footer";
+//import files in components folder (index)
+@import "components/index/modal";
+@import "components/index/hero";
+@import "layout/breadcrumb";
+@import "components/index/alert";
+@import "components/portfolio/galery";

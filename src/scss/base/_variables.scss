@@ -1,0 +1,11 @@
+//Variables for color map
+$colors: ( 'background': #576574, 'main2': #ebdb84, 'main3': #9e915c, 'main4': #b15006, 'txt1': #d1d8e0, 'txt2': #90959b, 'main':#222c36, "background-menu": #576574, "is-active":#c8d6e5, "hover":#8395a7);
+//Variables for grid sytem - loop in grid.scss
+$grid-columns: 12;
+$screen-sizes: ( 'sm':300px, // Mobile small
+'md': 720px, //Breakpoint from smartphone to tablette
+'lg': 992px, //Breakpoint from tablette to PC
+'xl': 1200px, //Breakpoint from PC to large PC
+);
+//variable list for font-size titels
+$font-size: ( 1.8rem, 1.6rem, 1.4rem, 1.2rem);

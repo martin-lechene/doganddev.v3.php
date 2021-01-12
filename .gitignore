@@ -1,0 +1,9 @@
+**/node_modules/
+**/package-lock copy.json
+**/package-lock.json
+**/package.json
+**/gulpfiles.js
+**/login/*
+**/registrer/*
+**/copyright/*
+**/dist/*

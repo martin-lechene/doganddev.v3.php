@@ -1,0 +1,26 @@
+main {
+    margin-bottom: 5vh;
+}
+
+.category-page {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: map-get($map: $colors, $key: "txt1");
+    h2 {
+        font-size: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    p {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        text-transform: initial;
+    }
+}
+
+.content-main {
+    padding: 10px;
+    color: map-get($map: $colors, $key: "txt1");
+}
