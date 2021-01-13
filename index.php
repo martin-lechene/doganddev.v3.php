@@ -1,22 +1,31 @@
 <?php 
-    $website = 'DOG&DEV';
+    $website = 'DOG AND DEV';
     $page = "home";
+    $desc_seo ="DOG AND DEV, une aventure à suivre.";
     $desc = "Vous êtes actuellement sur la page home ! ";
     $logo = "../dist/img/logo.svg";
     $css = "/dist/css/min-screen.css";
     $js = "/dist/js/min-all.js";
+    $alert_isactive = true;
+
+    // Fichier requis 
+    include("./administration/modules/alert_isactive.php"); // Alert system
+    // Fichier requis une fois
+    // Fichier include 
+
     ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title><?php echo($website) ?> | <?php echo($page) ?></title>
         <link rel="stylesheet" href="<?php echo($css) ?>">
+        <meta name="description" content="<?php echo($desc_seo);?>" >
     </head>
     <body>
         <?php include("./administration/modules/header.php"); ?>
         
         <div class="wrap">
-        <div class="alert">
+        <div class="alert" <?php echo($alert_isactive); ?>>
                     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                     Nous sommes actuellement indisponible.
         </div> 
@@ -24,7 +33,7 @@
                 <div class="hero">
                     <div class="hero-image">
                         <div class="hero-text">
-                            <h1><?php echo($page); ?></h1>
+                            <h1><?php echo($website); ?> | <?php echo($page); ?> </h1>
                             <p>Une aventure à suivre.</p>
                         </div>
                     </div>
