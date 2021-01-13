@@ -1,13 +1,7 @@
 <?php 
-    $website = 'DOG AND DEV';
     $page = "home";
-    $desc_seo ="DOG AND DEV, une aventure à suivre.";
     $desc = "Vous êtes actuellement sur la page home ! ";
-    $logo = "../dist/img/logo.svg";
-    $css = "/dist/css/min-screen.css";
-    $js = "/dist/js/min-all.js";
-    $alert_isactive = true;
-
+    include("./administration/cpanel/info_website.php"); // Fichier de configuration 
     // Fichier requis 
     include("./administration/modules/alert_isactive.php"); // Alert system
     // Fichier requis une fois
