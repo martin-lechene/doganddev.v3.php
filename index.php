@@ -2,12 +2,7 @@
     $page = "home";
     $desc = "Vous êtes actuellement sur la page home ! ";
     include("./administration/cpanel/info_website.php"); // Fichier de configuration 
-    // Fichier requis 
-    include("./administration/modules/alert_isactive.php"); // Alert system
-    // Fichier requis une fois
-    // Fichier include 
-
-    ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
