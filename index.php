@@ -24,7 +24,7 @@
                 <div class="hero">
                     <div class="hero-image">
                         <div class="hero-text">
-                            <h2><?php echo($page); ?></h2>
+                            <h1><?php echo($page); ?></h1>
                             <p>Une aventure à suivre.</p>
                         </div>
                     </div>
@@ -35,17 +35,26 @@
                         <div class="realisation">
                             <p>Découvre nos meilleurs réalisations.</p>
                             <div class="realisation-img row">
-                                <div class="cards col-6">
+                                <div class="cards col-3">
                                     <h4>hrs-plomberier.be</h4>
                                     <img src="/dist/img/webdev-result.png" alt="">
                                     <h6>Même les plombiers, on leur site web ! Alors pourquoi pas vous ?</h6>
                                 </div>
-                                <div class="cards col-6">
+                                <div class="cards col-3">
                                     <h4>pingubkz.com</h4>
                                     <img src="/dist/img/webdev-result.png" alt="">
                                     <h6>Les artistes de musique aussi !</h6>
                                 </div>
-                               
+                                <div class="cards col-3">
+                                    <h4>hrs-plomberier.be</h4>
+                                    <img src="/dist/img/webdev-result.png" alt="">
+                                    <h6>Même les plombiers, on leur site web ! Alors pourquoi pas vous ?</h6>
+                                </div>
+                                <div class="cards col-3">
+                                    <h4>pingubkz.com</h4>
+                                    <img src="/dist/img/webdev-result.png" alt="">
+                                    <h6>Les artistes de musique aussi !</h6>
+                                </div>
                             </div>
                         </div>
                     </div>

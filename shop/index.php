@@ -15,8 +15,13 @@
         <?php include("../administration/modules/header.php"); ?>
         <div class="wrap">
             <main>
-                <div class="title-page">
-                    <h1><?php echo($page)?></h1>
+            <div class="hero">
+                    <div class="hero-image">
+                        <div class="hero-text">
+                            <h1><?php echo($page); ?></h1>
+                            <p>Une aventure à suivre.</p>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>    
