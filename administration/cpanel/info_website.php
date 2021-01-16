@@ -7,6 +7,7 @@ $css = "/dist/css/min-screen.css";
 $js = "/dist/js/min-all.js";
 $alert_isactive = false; // Active les alertes ou non sur les pages
 
+
 // Modules
 // SYSTEM ALERT V0.1 PHP
 include("./administration/modules/alert_isactive.php"); // Alert system 

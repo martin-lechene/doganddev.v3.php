@@ -1,6 +1,6 @@
 <?php 
     $website = 'DOG&DEV';
-    $page = "contact";
+    $page = "portfolio";
     $logo = "../dist/img/logo.svg";
     $css = "/dist/css/min-screen.css";
     $js = "/dist/js/min-all.js";
@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="<?php echo($css) ?>">
     </head>
     <body>
-        <?php include("../administration/modules/header.php"); ?>
+        <?php include("administration/modules/header.php"); ?>
         <div class="wrap">
             <main>
             <div class="hero">

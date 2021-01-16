@@ -1,0 +1,22 @@
+// Custom scroll bar
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background-color: transparent;
+    box-shadow: inset 0px 0px 5px 0px #222c36;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #222c36;
+}

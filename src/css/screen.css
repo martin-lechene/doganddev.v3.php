@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 .row {
   display: flex;
   flex-wrap: wrap; }
@@ -232,7 +233,7 @@
 
 html {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Comfortaa', cursive;
   scroll-behavior: smooth;
   box-sizing: content-box;
   background-color: #576574; }
@@ -281,7 +282,11 @@ strong {
 header {
   overflow: hidden;
   background-color: #576574;
-  padding: 10px 10px; }
+  padding: 10px 10px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  width: 100%; }
   header a {
     float: left;
     color: #d1d8e0;
@@ -320,6 +325,7 @@ nav {
     float: none; } }
 
 main {
+  margin-top: 10vh;
   margin-bottom: 5vh; }
 
 .category-page {
@@ -338,7 +344,7 @@ main {
     text-transform: initial; }
 
 .content-main {
-  padding: 10px;
+  padding: 0;
   color: #d1d8e0; }
 
 .realisation-img {
@@ -350,7 +356,11 @@ main {
   .cards h4 {
     padding: 7.5px; }
   .cards h6 {
-    padding: 2.5px; }
+    font-weight: lighter;
+    font-size: 12px;
+    padding: 1.5px; }
+  .cards iframe {
+    max-width: 100%; }
 
 footer {
   background-color: #c0df53;
@@ -368,10 +378,25 @@ footer {
   footer a:hover {
     color: #8395a7; }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  box-shadow: inset 0px 0px 5px 0px #222c36; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #222c36; }
+
 /* The hero image */
 .hero {
-  height: 350px;
+  height: 795px;
   margin-bottom: 20px; }
+  .hero * {
+    font-family: 'Comfortaa', cursive; }
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -397,11 +422,52 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white; }
+  color: rgba(255, 255, 255, 0.75); }
   .hero-text h1 {
     text-transform: uppercase; }
   .hero-text p {
     padding: 20px; }
+  .hero-text .down-arrow {
+    display: inline-block;
+    background: rgba(247, 247, 247, 0);
+    width: 200px;
+    height: 0;
+    text-align: center; }
+  .hero-text .down-arrow:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 37.25%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid rgba(255, 255, 255, 0.75);
+    border-right: 25px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 25px solid transparent; }
+
+.hero-image-video {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(/dist/img/output-onlinepngtools.png);
+  width: 100%; }
+  .hero-image-video .hero-text {
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 0; }
+    .hero-image-video .hero-text h1 {
+      padding-top: 10px; }
+    .hero-image-video .hero-text p {
+      padding: 25px; }
+      .hero-image-video .hero-text p a {
+        color: #5a5a5a;
+        padding: 10px;
+        border-radius: 5%;
+        background-color: #ffffff;
+        text-decoration: none;
+        box-shadow: 0 0 5px 0 #dddddd; }
+        .hero-image-video .hero-text p a:hover {
+          box-shadow: 0 0 15px 0 #dddddd;
+          color: #424242;
+          background-color: white; }
 
 /* Style the list */
 ul.breadcrumb {
